@@ -1,0 +1,20 @@
+{
+  "name": "doctor",
+  "description": "A program that allows users to query a list of doctors. 6/30/17",
+  "main": "index.js",
+  "authors": [
+    "Marilyn Carlin <marilyn.s.carlin@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

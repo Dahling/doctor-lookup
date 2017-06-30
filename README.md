@@ -21,6 +21,10 @@ A website created with Javascript using API calls that allows users to enter a m
 
 ## Setup/Installation Requirements
 1. Clone this repository.
+2. In the terminal, navigate into the repository and run the following commands:
+  $ npm init
+  $ bower init
+3. This program requires a [BetterDoctor](https://developer.betterdoctor.com/) API key. Follow the link and sign up to receive your own free API key.
 
 ## Known Bugs
 * No known bugs at this time.
