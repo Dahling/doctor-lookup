@@ -6,7 +6,7 @@
 
 ## Description
 
-A website created with Javascript using API calls that allows users to enter a medical condition or symptom and query a list of local doctors able to treat the issue.
+A website created with Javascript using API calls that allows users to enter a medical condition or symptom and query a list of doctors in the Portland, OR area able to treat the issue.
 
 ### Specs
 | Behavior | Example Input | Example Output |
@@ -25,14 +25,18 @@ A website created with Javascript using API calls that allows users to enter a m
   $ npm init
   $ bower init
 3. This program requires a [BetterDoctor](https://developer.betterdoctor.com/) API key. Follow the link and sign up to receive your own free API key.
+4. Create a file in the top level of the directory called ".env". Store your Better Doctor API key there with the format 'exports.apiKey = "YOUR-API-KEY"'
+5. In the terminal, run $ gulp build and $ gulp serve.
 
 ## Known Bugs
-* No known bugs at this time.
+* Program does not return results of API call, returning a console error that displayDoctors() is not defined. Insurance and geocoding back-end not working at this time.
 
 ## Technologies Used
 
 * HTML
 * Javascript
+* css
+  * sass
 
 ## Support and contact details
 

@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <link rel="stylesheet" href="build/css/styles.css"> -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCobmjNedltKXPTcQLVOCmdRHTPVCkk8o0"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="build/css/styles.css">
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCobmjNedltKXPTcQLVOCmdRHTPVCkk8o0"></script> -->
     <script src="build/js/vendor.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script>
+    <script src='build/js/app.js'></script>
     <title>Doctor Lookup</title>
   </head>
   <body>
-    <form id="user-form">
-      <label for="symptom">What symptom are you experiencing?</label>
-      <input id="symptom" type="text" name="symptom" placeholder="Runny nose">
-      <!-- <label for="address">What is your address?</label>
-      <input id="address" type="text" name="address" placeholder="123 Main Street, Anytown, USA"> -->
-      <label for="range">Search within:</label>
-      <select id="range">
-        <option value="5">5 miles</option>
-        <option value="10">10 miles</option>
-        <option value="15">15 miles</option>
-        <option value="25">25 miles</option>
-        <option value="50">50 miles</option>
-        <option value="100">100 miles</option>
-      </select>
-      <!-- <label for="insurance">Insurance Provider</label>
-      <select id="insurance">
-      </select> -->
-      <button type="submit">Submit</button>
-    </form>
-    <ul class="showDoctors">
-    </ul>
+    <div class="hero">
+      <div class="banner">
+        <h1>Doctor Lookup</h1>
+        <h4>Find doctors near you.</h4>
+        <form id="user-form">
+          <label for="symptom">What symptom are you experiencing?</label>
+          <input id="symptom" type="text" name="symptom" placeholder="Runny nose">
+          <!-- <label for="address">What is your address?</label>
+          <input id="address" type="text" name="address" placeholder="123 Main Street, Anytown, USA"> -->
+          <label for="range">Search within:</label>
+          <select id="range">
+            <option value="5">5 miles</option>
+            <option value="10">10 miles</option>
+            <option value="15">15 miles</option>
+            <option value="25">25 miles</option>
+            <option value="50">50 miles</option>
+            <option value="100">100 miles</option>
+          </select>
+          <!-- <label for="insurance">Insurance Provider</label>
+          <select id="insurance">
+          </select> -->
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="doctorList">
+      <ul class="showDoctors">
+      </ul>
+    </div>
   </body>
 </html>
