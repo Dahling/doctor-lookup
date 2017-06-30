@@ -8,7 +8,7 @@ function Insurance(id, name) {
 
 var insuranceArray = [];
 
-User.prototype.getInsurances = function() {
+function getInsurances(){
   $.get('https://api.betterdoctor.com/2016-03-01/insurances?user_key=' + apiKey)
     .then(function(response) {
       response.data.forEach(function(element) {
@@ -17,6 +17,6 @@ User.prototype.getInsurances = function() {
       });
       insuranceSelection(insuranceArray);
     });
-  };
+  }
 
 exports.insuranceModule = Insurance;

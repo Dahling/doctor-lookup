@@ -4,8 +4,8 @@ var User = require('./../js/user.js').userModule;
 function Doctor() {
 }
 
-User.prototype.getDoctors = function(symptom, insurance) {
-  $.get('https://api.betterdoctor.com/2016-03-01/doctors?query=' + symptom + '&insurance_uid=' + insurance + '&location=' + '45.5231%2C-122.6765%2C%205&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=' + apiKey)
+User.prototype.getDoctors = function(symptom, range) {
+  $.get('https://api.betterdoctor.com/2016-03-01/doctors?query=' + symptom + '&location=45.5231%2C-122.6765%2C%' + range + '&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=' + apiKey)
    .then(function(result) {
       console.log(result);
     })
