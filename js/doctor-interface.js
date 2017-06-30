@@ -1,4 +1,6 @@
-var User = require('./../js/doctor.js').userModule;
+var User = require('./../js/user.js').userModule;
+var Doctor = require('./../js/doctor.js').doctorModule;
+
 
 $(document).ready(function() {
 
@@ -9,5 +11,7 @@ $(document).ready(function() {
     var currentUserObject = new User();
     var location = $("#location").val();
     var symptom = $("#symptom").val();
+
+    currentUserObject.getDoctors(symptom, 'united healthcare');
   });
 });
