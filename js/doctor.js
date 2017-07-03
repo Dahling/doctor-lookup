@@ -56,6 +56,7 @@ User.prototype.getDoctors = function(symptom, range) {
         doctor.bio = "Bio: N/A";
       }
     });
+    console.log(doctorArray);
     displayDoctors(doctorArray);
   });
 };

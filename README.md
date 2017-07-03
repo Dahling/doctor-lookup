@@ -6,7 +6,7 @@
 
 ## Description
 
-A website created with Javascript using API calls that allows users to enter a medical condition or symptom and query a list of doctors in the Portland, OR area able to treat the issue.
+A website created with Javascript that allows users to enter a medical condition/symptom and query a list of doctors in the Portland, OR area able to treat the issue.
 
 ### Specs
 | Behavior | Example Input | Example Output |
