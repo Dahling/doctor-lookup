@@ -22,5 +22,13 @@
     "gulp-util": "^3.0.8",
     "jshint": "^2.9.5",
     "vinyl-source-stream": "^1.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcarlin27/doctor-lookup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mcarlin27/doctor-lookup/issues"
+  },
+  "homepage": "https://github.com/mcarlin27/doctor-lookup#readme"
 }

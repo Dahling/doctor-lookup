@@ -6,7 +6,7 @@
     "Marilyn Carlin <marilyn.s.carlin@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/mcarlin27/doctor-lookup",
   "ignore": [
     "**/.*",
     "node_modules",

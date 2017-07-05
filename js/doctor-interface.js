@@ -17,33 +17,27 @@ var displayDoctors = function(doctorArray) {
 //   });
 // }; //not currently used
 
-// var latLngArray = [];
-// var geocoder = new google.maps.Geocoder();
-// function codeAddress(address) {
-//   geocoder.geocode( { 'address': address}, function(results, status) {
-//     if (status == 'OK') {
-//       // var newLatLng = new LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng());
-//       latLngArray.push( {
-//         lat: results[0].geometry.location.lat(),
-//         lng: results[0].geometry.location.lng()
-//       });
-//     } else {
-//       alert('Geocode was not successful for the following reason: ' + status);
-//     }
-//   });
-// } //not using this either
-
+function codeAddress(address) {
+  var geocoder = new google.maps.Geocoder();
+  return new Promise(function(resolve,reject) {
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == 'OK') {
+        resolve(results);
+      } else {
+        reject(status);
+      }
+    });
+  });
+}
 
 $(document).ready(function() {
   $("#user-form").submit(function(event) {
     event.preventDefault();
     $(".showDoctors").empty();
     var currentUserObject = new User();
-    // var location = $("#address").val();
-    // codeAddress(location);
-    // console.log(latLngArray);
+    var location = $("#address").val();
     var symptom = $("#symptom").val();
     var range = $("#range").val();
-    currentUserObject.getDoctors(symptom, range);
+    currentUserObject.getDoctors(symptom, range, location, codeAddress, displayDoctors);
   });
 });

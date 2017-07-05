@@ -44,7 +44,7 @@
         color: #0B0E0E;
         font-weight: bold;
       }
-      input {
+      input, select {
         // border-radius: 2rem;
         height: 30px;
       }
@@ -52,8 +52,10 @@
         background-color: #111D4A;
         border: 2px solid #C5D6D8;
         color: #C5D6D8;
-        padding: 8px;
+        margin-top: 20px;
+        padding: 8px 8px 20px;
         border-radius: 2rem;
+
       }
     }
   }
